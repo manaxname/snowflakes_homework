@@ -8,8 +8,8 @@ final class Snow {
     private int deltaX;
     private int deltaY;
 
-    void Reinit(int xStart, int moveDown, int moveX, int size){
-        y = 0;
+    void Reinit(int xStart, int yStart, int moveDown, int moveX, int size){
+        y = yStart;
         x = xStart;
         deltaX = moveX;
         deltaY = moveDown;

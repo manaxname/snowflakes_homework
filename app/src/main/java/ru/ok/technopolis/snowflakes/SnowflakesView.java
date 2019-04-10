@@ -20,7 +20,7 @@ public class SnowflakesView extends View {
         super(context, attrs);
         paint = new Paint();
         random = new Random();
-        snows = new Snow[400];
+        snows = new Snow[700];
     }
 
     private Snow[] snows;
@@ -60,7 +60,7 @@ public class SnowflakesView extends View {
     }
 
     private static void reGenerateSnow(final Random random, final Snow snow) {
-        snow.Reinit(random.nextInt(maxWidth), randInt(random,2, 10), randInt(random,-2, 2), random.nextInt(15));
+        snow.Reinit(random.nextInt(maxWidth), random.nextInt(maxHegth/10), randInt(random,2, 10), randInt(random,-2, 2), random.nextInt(15));
     }
 
     private static int randInt(final Random random, final int min, final int max) {
